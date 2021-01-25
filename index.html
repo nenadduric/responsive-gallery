@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+<style>
+
+body {
+    font-family: sans-serif;
+    color: rgb(192, 192, 192);
+    background-color: rgb(31, 33, 48);
+    max-width: 1024px;
+    width: 95%;
+    margin: 0px auto;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.box {
+    width: 160px;
+    height: 160px;
+    border: 1px solid rgb(0, 24, 90);
+    border-radius: 8px;
+    margin: 20px;
+    filter: drop-shadow( 0px 0px 5px black)
+    
+}
+
+.photo {
+    width: 100%;
+    height: 80%;
+    background-color: lightskyblue;
+    border-radius: 8px 8px 0 0;
+    background-image: url("img/placeholder-image.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    
+}
+
+.title {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    line-height: 32px;
+
+}
+
+p {
+    margin: 20px;
+    text-align: left;
+}
+h1 {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .box {
+width: 20%;
+}
+}
+ 
+@media screen and (max-width: 768px) {
+    .box {
+width: 27%;
+}
+ 
+@media screen and (max-width: 414px) {
+    .box {
+width: 100%;
+min-height: 40vh;
+}
+}
+
+
+</style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <hr>
+    <div id="main-container">
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+        <div class="box">
+            <div class="photo"></div>
+            <div class="title">Image Title</div>
+        </div>
+
+      
+     
+    </div>
+    <hr>
+        <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+    </body>
+</html>
